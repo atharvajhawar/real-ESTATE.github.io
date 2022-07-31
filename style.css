@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,300;1,400&family=Open+Sans:ital,wght@0,500;1,400&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+
+:root{
+    --red:#ff5a3c;
+    --light-red:#f9edeb ;
+}
+
+
+
+*{
+    font-family: 'Nunito',sans-serif ;
+    margin: -4px;padding: 12px;
+    box-sizing: border-box;
+    outline: none; border: none ;
+    text-decoration: none ;
+    text-transform: capitalize ;
+}
+
+html{
+    font-size: 17.5 ;
+    overflow-x: hidden ;
+    scroll-behavior: smooth ;
+    scroll-padding-top:7rem ;
+}
+
+body{
+    background: #f7f7f7 ;
+}
+
+section{
+    padding:2rem 9% ;
+    top: 10rem;
+}
+
+.btn{
+    margin-top: 1rem ;
+    display: inline-block;
+    padding: .8rem 3.5rem ;
+    border-radius: ,5rem ;
+    font-size: 0.7rem ;
+    color: var(--red);
+    cursor: pointer;
+    background: var(--light-red);
+    gap:10px;
+}
+.btn:hover{
+    background: var(--red);
+    color: #fff ;
+}
+
+.heading{
+    text-align: center;
+    color: black ;
+    font-size: 4rem ;
+    padding-bottom: 3rem ;
+    
+    
+}
+
+.heading span{
+    color: var(--red);
+    background: var(--light-red);
+    border-radius: .5rem ;
+    padding: .2rem 1.5rem ;
+    
+}
+
+
+header{
+   position: fixed ;
+    top: -24px;left: 0;right: 0;
+    z-index: 1000;
+    background:#fff ;
+    padding: 2rem 9% ;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    
+    
+}
+
+header .logo{
+    font-weight: bolder ;
+    font-size: 1.5rem ;
+    color: blueviolet ;
+    
+}
+header .logo span{
+    color: var(--red);
+}
+
+header .navbar{
+    color: brown ;
+    font-size:1rem ;
+    padding: 0 1.5rem ;
+}
+header .navbar a:hover{
+    color: var(--red);
+    
+    
+}
+
+header .icons menu-bars,
+header .icons a{
+    height: 3.5rem ;
+    line-height: 4.5rem ;
+    width: 2rem ;
+    font-size: 2rem ;
+    margin-right: .5rem ;
+    border-radius: .5rem ;
+    color: azure ;
+    background: var(--light-red) ;
+    text-align: center ;
+    
+}
+header .icons menu-bars,
+header .icons a:hover{
+    background-color: aqua ;
+    color: antiquewhite;
+    
+    
+}
+header .icons menu-bars{
+    display: none ;
+}
+.home{
+    min-height: 100vh ;
+    background: url(home-bg.jpg) no-repeat ;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.home form{
+    margin-top: 0rem ;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border: .1rem solid rgba(0,0,0,2);
+    width: 70rem ;
+    padding: 2rem ;
+}
+
+.home form h3{
+    text-align: center;
+    color: #333 ;
+    font-size: 3rem ;
+}
+
+.home form .button-containers{
+    display: flex;
+    
+}
+.home form .button-containers .btn{
+    flex: 1 ;
+    text-align: center;
+    
+}
+.home form .inputbox{
+    display: flex ;
+    flex-wrap: wrap ;
+    gap:1.5rem ;
+    margin-top: 2rem ;
+}
+
+.services .box-containers{
+    display: flex ;
+    flex-wrap: nowrap
+    
+    
+}
+.services .box-containers .box{
+    flex:1 1 30rem ;
+    border-radius: .5rem ;
+    background: #fff ;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    border: .1rem solid rgba(0,0,0,2);
+    text-align: center;
+    padding: 2rem ;
+    
+    
+}
+.services .box-containers .box h3{
+    font-size: 1.5rem ;
+    color: #666 ;
+    padding: .5rem 0 ;
+    line-height: 2;
+    
+    
+}
+
+.featured .box-containers{
+    display: flex ;
+    flex-wrap: nowrap;
+    
+}
+.featured .box-containers .box{
+    border: .1rem solid rgba(0,0,0,2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    border-radius: .5rem ;
+    overflow: hidden ;
+    background: #fff ;
+    flex: 1 1 30rem ;
+    
+}
+.featured .box-containers .box .image-containers{
+    overflow-x: hidden;
+    position: relative ;
+    width: 80% ;
+    height: 25rem ;
+    
+}
+.featured .box-containers .box .image-containers img{
+    width: 80% ;
+    height: 25rem ;
+    object-fit: cover ;
+    transition: .2s linear ;
+    
+}
+.featured .box-containers .box:hover .image-containers img{
+    transform: scale(1.1);
+}
+.featured .box-containers .box:hover .image-containers .info{
+    position: absolute;
+    top: 1rem ;
+    left: 0 ;
+    display: flex ;
+}
+.featured .box-containers .box:hover .image-containers .h3{
+    font-size: 1.4rem ;
+    color: #fff ;
+    background: rgba(0,0,0,2) ;
+    border-radius: .5rem ;
+    padding: .5rem 1.5rem ;
+    margin-left: 1.5rem ;
+}
+.featured .box-containers .box:hover .image-containers .icons{
+    position: absolute ;
+    top: 1rem ;right: 0 ;
+    display: flex ;
+
+}
+
+.Agents .box-container{
+    display: flex ;
+    flex-wrap: wrap ;
+}
+.Agents .box-container .box{
+    background: #fff; 
+    text-align: center ;
+    border: .1rem solid rgba(0,0,0,1);
+    border-radius: .5rem ;
+    padding: 2rem ;
+    position: relative ;
+    width: 26rem ;
+    
+}
+.Agents .box-container .box .fav-envelope{
+    position: relative ;
+    top: 1.8rem; left: 2rem ;
+    color: #fff;
+    font-size: 2rem ;
+}
+
+.Agents .box-container .box img{
+    border-radius: 50% ;
+    box-shadow: 0 0 0 .5rem rgba(0,0,0,1);
+    object-fit: cover ;
+    height: 10rem ;
+    width: 10rem ;
+    margin: 1rem 0 ;
+    
+}
+
+.Agents .box-container .box h3{
+    font-size: 2rem ;
+    color: #333 ;
+    
+    
+}
+.Agents .box-container .box .share a{
+    margin: 0 .3rem ;
+    height: 4rem ;
+    line-height: 4rem ;
+    background: #f7f7f7;
+    color: #777 ;
+    border-radius: .5rem ;
+    font-size: 2rem ;
+    
+    
+}
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 17.5 ;
+    }
+    header{
+        padding: 1.5rem 1rem ;
+    }
+    
+}
+
+@media (max-width:768px){
+    header .icons menu-bars{
+        display: inline-block;
+    }
+    
+    header .navbar{
+        position: absolute ;
+        top: 100%; left: 0; right: 0 ;
+        background: #f7f7f7 ;
+        border-top: .1rem solid #333 ;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear ;
+        clip-path:polygon(0 0,100% 0,100% 100%,0% 100%);
+
+    }
+    
+    header .navbar .active{
+        clip-path:polygon(0 0,100% 0,100% 100%,0% 100%);
+        
+    }
+    
+    header .navbar a{
+        display: block ;
+        padding: 1.5rem ;
+        margin: 1.5 rem ;
+        background: #fff ;
+        border: .1rem solid #333 ;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,1) ;
+        border-radius: .5rem ;
+            
+            
+            
+    }
+}
+    
+    
+    
+    
+    
+    
